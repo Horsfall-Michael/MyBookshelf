@@ -1,0 +1,64 @@
+/* 1. All imports MUST come first at the very top of the file */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+@variant dark (&:where(.dark, .dark *));
+
+
+@theme {
+  --color-app: var(--text);
+  --color-heading-light: var(--light-text-h);
+  --color-app-bg: var(--bg);
+  --color-app-border: var(--border);
+  --color-card-light: var(--light-card-bg);
+  --color-accent: var(--accent);
+  --color-dark-bg: var(--dark-bg);
+  --color-dark-card: var(--dark-card-bg);
+
+  --font-display: "DM Sans", system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: "DM Serif Display";
+
+  --shadow-app: var(--shadow)
+}
+
+/* 3. Global CSS Variables & Native Rules */
+:root {
+  --text: #64748B;
+  --light-text-h: #1E293B;
+  --bg: #F8FAFC;
+  --border: #CBD5E1;
+  --light-card-bg: #FFFFFF;
+  --accent: #6366F1;
+  --dark-bg: #0B0F1A;
+  --dark-card-bg:#1E293B;
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  /* Appended fallback configuration variables */
+  --font-display: "DM Sans", system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: "DM Serif Display";
+
+  /* FIX: Changed from var(--sans) to var(--font-display) so the font applies */
+  font: 18px/145% var(--font-display);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+
+p {
+  margin: 0;
+}
+
