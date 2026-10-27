@@ -40,8 +40,8 @@ const Navbar = () => {
         </button>
 
         <div className="hidden md:flex items-center gap-4">
-        <Link className="font-semibold" href="/login" className="text-[#111827]">Log In</Link>
-        <Link className="py-2 px-4 bg-[#6366F1] rounded-xl text-white font-semibold">Start your Library</Link>
+        <Link className="font-semibold text-[#111827]" href="/login">Log In</Link>
+        <Link className="py-2 px-4 bg-[#6366F1] rounded-xl text-white font-semibold hover:bg-[#4F46E5] ease-in transition-[300ms]">Start your Library</Link>
       </div>
       </div>
 
